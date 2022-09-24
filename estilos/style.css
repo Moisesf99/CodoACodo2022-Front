@@ -12,11 +12,6 @@
   margin-bottom: 20%;
 }
 
-.TextoBotones{
-font-size: smaller;
-font-weight: bolder;
-}
-
 h2{
   justify-content: center;
   text-align: center;
@@ -31,4 +26,40 @@ h2{
 
 .card-text{
   font-size: smaller;
+}
+.textobotones{
+  border: none;
+  font-weight:bolder;
+  height: 25px;
+
+}
+
+.texto{
+  font-size: small;
+}
+
+.botonenviar{
+  background-color:rgb(132,195,37);
+  border: white;
+  font-size: larger;
+  margin-top: 5px;
+}
+.texto1{
+  font-size: 150%;
+}
+
+.formulario{
+margin-left: 25%;
+margin-right: 25%;
+}
+
+.piedepagina{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer{
+  background-color:rgb(26,57,107);
 }
