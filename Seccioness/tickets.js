@@ -17,21 +17,33 @@ function TotalAAbonar(Cantidad, Categoria) {
     return Total
 }
 
-let boton = document.getElementById("Resumen")
 
-let Formulario = Document.getElementById("Formulario")
-Formulario.addEventListener("submit",(e)=>{
-    e.preventDefault();
-})
+function Comprar () {
 
+    let boton = document.getElementById("Resumen")
 
-boton.addEventListener("click",()=>{
-    let Cantidad = document.getElementById("Cantidad").value
-    let Categoria = document.getElementById("Categoria").value
+    if(boton){
+    boton.addEventListener('click',() =>{
+        console.log('Boton Clicked')
+        boton.addEventListener("submit",e=>{
+            e.preventDefault();
+        })
+        boton.addEventListener("click",()=>{
+            let Cantidad = document.getElementById("Cantidad").value
+            let Categoria = document.getElementById("Categoria").value
+        
+            let Valor = TotalAAbonar(Cantidad,Categoria)
+        
+            let divMensaje = document.getElementById("Resultado")
+            divMensaje.textContent = "Total a pagar: $" + Valor
+        }
+        )
+    })
+    
+    }
 
-    let Valor = TotalAAbonar(Cantidad,Categoria)
-
-    let divMensaje = document.getElementById("Resultado")
-    divMensaje.textContent = "Total a pagar: $" + Valor
 }
-)
+
+
+
+
